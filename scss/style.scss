@@ -1,0 +1,522 @@
+//! Font
+/*Font*/
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: local('MuseoSansCyrl-500'), url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+    url('../fonts/MuseoSansCyrl-500.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-Medium'), url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('../fonts/Gilroy-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica Regular'), local('Helvetica-Regular'),
+    url('../fonts/Helvetica-Regular.woff2') format('woff2'),
+    url('../fonts/Helvetica-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Black'), local('NotoSans-Black'),
+    url('../fonts/NotoSans-Black.woff2') format('woff2'),
+    url('../fonts/NotoSans-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Black Italic'), local('NotoSans-BlackItalic'),
+    url('../fonts/NotoSans-BlackItalic.woff2') format('woff2'),
+    url('../fonts/NotoSans-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+    url('../fonts/NotoSans-Bold.woff2') format('woff2'),
+    url('../fonts/NotoSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'),
+    url('../fonts/NotoSans-BoldItalic.woff2') format('woff2'),
+    url('../fonts/NotoSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans ExtraBold'), local('NotoSans-ExtraBold'),
+    url('../fonts/NotoSans-ExtraBold.woff2') format('woff2'),
+    url('../fonts/NotoSans-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans ExtraBold Italic'), local('NotoSans-ExtraBoldItalic'),
+    url('../fonts/NotoSans-ExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/NotoSans-ExtraBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans ExtraLight'), local('NotoSans-ExtraLight'),
+    url('../fonts/NotoSans-ExtraLight.woff2') format('woff2'),
+    url('../fonts/NotoSans-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans ExtraLight Italic'), local('NotoSans-ExtraLightItalic'),
+    url('../fonts/NotoSans-ExtraLightItalic.woff2') format('woff2'),
+    url('../fonts/NotoSans-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Italic'), local('NotoSans-Italic'),
+    url('../fonts/NotoSans-Italic.woff2') format('woff2'),
+    url('../fonts/NotoSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Light'), local('NotoSans-Light'),
+    url('../fonts/NotoSans-Light.woff2') format('woff2'),
+    url('../fonts/NotoSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Light Italic'), local('NotoSans-LightItalic'),
+    url('../fonts/NotoSans-LightItalic.woff2') format('woff2'),
+    url('../fonts/NotoSans-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+    url('../fonts/NotoSans-Medium.woff2') format('woff2'),
+    url('../fonts/NotoSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Medium Italic'), local('NotoSans-MediumItalic'),
+    url('../fonts/NotoSans-MediumItalic.woff2') format('woff2'),
+    url('../fonts/NotoSans-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+    url('../fonts/NotoSans-Regular.woff2') format('woff2'),
+    url('../fonts/NotoSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans SemiBold'), local('NotoSans-SemiBold'),
+    url('../fonts/NotoSans-SemiBold.woff2') format('woff2'),
+    url('../fonts/NotoSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans SemiBold Italic'), local('NotoSans-SemiBoldItalic'),
+    url('../fonts/NotoSans-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/NotoSans-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Thin'), local('NotoSans-Thin'),
+    url('../fonts/NotoSans-Thin.woff2') format('woff2'),
+    url('../fonts/NotoSans-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Thin Italic'), local('NotoSans-ThinItalic'),
+    url('../fonts/NotoSans-ThinItalic.woff2') format('woff2'),
+    url('../fonts/NotoSans-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+    url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular'),
+    url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+    url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+    url('../fonts/OpenSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+//! Reset
+/*Reset*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+input[type='text'],
+input[type='url'],
+input[type='tel'],
+input[type='number'],
+input[type='color'],
+input[type='email'],
+input[type='password'] {
+  width: 100px;
+  height: 100px;
+  font: 400 16px sans-serif;
+  padding: 0 22px;
+  border-radius: 6px;
+  border: 1px solid #c7d7df;
+  color: #000;
+  &::placeholder {
+    color: #898989;
+  }
+  &::-moz-placeholder {
+    color: #898989;
+  }
+}
+
+input.input-error {
+  border-color: #a94442;
+  &::placeholder {
+    color: #a94442;
+  }
+  &::-moz-placeholder {
+    color: #a94442;
+  }
+}
+
+.input-error {
+  font-size: 14px;
+  color: #a94442;
+  margin-top: 4px;
+}
+
+button,
+input,
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: inherit;
+  border: none;
+  color: #000;
+  width: 100%;
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font: 400 18px 'Noto Sans', sans-serif;
+  color: $black;
+  background: #ffffff;
+  letter-spacing: -0.24px;
+}
+
+a {
+  display: inline-block;
+  font: inherit;
+  color: inherit;
+  transition: 300ms;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+a {
+  display: inline-block;
+  font: inherit;
+  transition: 300ms;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+//! Color
+/*Color*/
+
+$black: #000000;
+$green: #55d1ad;
+$white: #fff;
+
+//! Container
+/*Container*/
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 944px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+//! Block
+/*Block*/
+
+//! Header
+/*Header*/
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 10px 0;
+  background: #ffffff;
+
+  &__inner {
+  }
+
+  &__menu {
+  }
+
+  &__logo {
+  }
+
+  &__block {
+  }
+
+  &__nav {
+  }
+
+  &__list {
+  }
+
+  &__link {
+  }
+
+  &__user {
+  }
+
+  &__entrance {
+  }
+
+  &__registration {
+  }
+
+  &__navigation {
+  }
+
+  &__burger {
+    display: none;
+    padding: 12px 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+
+    span {
+      display: block;
+      width: 30px;
+      height: 3px;
+      //background: $pink;
+      border-radius: 5px;
+      position: relative;
+
+      &:before,
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        //background: $pink;
+        border-radius: 5px;
+        position: absolute;
+        left: 0px;
+      }
+
+      &:before {
+        top: 9px;
+      }
+      &::after {
+        top: -9px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+    }
+  }
+
+  &__mobile {
+    opacity: 0;
+    visibility: hidden;
+    @media only screen and (max-width: 767px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgb(197, 191, 191);
+      min-height: 100vh;
+      padding-top: 90px;
+      width: 66%;
+      transition: 300ms;
+      z-index: 2;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        transition: 300ms;
+      }
+    }
+
+    .header__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header__link {
+      margin: 0 0 30px;
+    }
+  }
+}
