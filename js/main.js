@@ -16,33 +16,7 @@ $(document).ready(function () {
     e.stopPropagation();
   });
 
-  //! Play__block
 
-  $( document ).ready(function() {
-    $(".play__block").click(function(e) {
-      $(".play__block").removeClass('active');
-      $(this).addClass('active');
-    })
-  })
 
-  //// ! Play-pink
-
-  $(".play__block-pink").on("click", function () {
-    
-    if ($(window).width() < 767){
-      $('.play__container-pink').show();
-      $('.play__container-orange').hide();
-    }
-  });
-
-  //// ! Play-orange
-
-  $(".play__block-orange").on("click", function () {
-
-    if ($(window).width() < 767){
-      $('.play__container-orange').show();
-      $('.play__container-pink').hide();
-    }
-  });
 
 });
