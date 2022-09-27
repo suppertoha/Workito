@@ -371,7 +371,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
-    padding: 0 40px;
+    padding: 0 15px;
   }
 }
 
@@ -1400,16 +1400,22 @@ a:hover {
   line-height: 55px;
   text-align: center;
   letter-spacing: 0.02em;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .search-mobile__subtitle {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   font-weight: 600;
   font-size: 16px;
   line-height: 25px;
   text-align: center;
   letter-spacing: 0.035em;
+}
+
+@media screen and (max-width: 768px) {
+  .search-mobile__subtitle {
+    font-size: 13px;
+  }
 }
 
 .search-mobile__images {
@@ -1864,6 +1870,12 @@ a:hover {
   padding: 53px 0 89px;
 }
 
+@media screen and (max-width: 768px) {
+  .about__content {
+    padding: 0 15px;
+  }
+}
+
 .about__title {
   color: #4466bc;
   margin-bottom: 35px;
@@ -1927,7 +1939,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   .contract-rate {
     background: #f5f7fd;
-    margin-top: 57px;
+    margin-top: 0px;
   }
 }
 
@@ -2302,5 +2314,96 @@ a:hover {
     flex-grow: 10;
     height: 50px;
     font-size: 16px;
+  }
+}
+
+/*Information*/
+.information {
+  margin-top: 200px;
+}
+
+@media screen and (max-width: 1280px) {
+  .information {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .information {
+    background: #f5f7fd;
+    margin-top: 0px;
+    padding: 58px 0;
+  }
+}
+
+.information__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information__content {
+  max-width: 700px;
+}
+
+@media screen and (max-width: 1280px) {
+  .information__content {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .information__content {
+    margin: 0;
+  }
+}
+
+.information__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.information__item:last-child {
+  margin: 0;
+}
+
+.information__img {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .information__img {
+    margin-right: 17px;
+    width: 39px;
+  }
+}
+
+.information__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+@media screen and (max-width: 768px) {
+  .information__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.information__images {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .information__images {
+    display: none;
   }
 }
