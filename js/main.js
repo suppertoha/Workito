@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // ! Header__burger
 
   $('.header__burger').on('click', function () {
@@ -14,15 +15,18 @@ $(document).ready(function () {
     e.stopPropagation();
   });
 
-  //!
-
+  //! Header-scroll
   jQuery(document).ready(function($) {
     var tinyHead = function() {
         $('header').toggleClass('tinyHead', $(document).scrollTop() > 0);
     }
-
     tinyHead();
-
     $(window).on('scroll touchmove', tinyHead);
+  });
+  
+  // ! Questions__body
+  $(".questions__header").on("click", function () {
+    $(this).toggleClass("active");
+    $(this).next().slideToggle();
   });
 });

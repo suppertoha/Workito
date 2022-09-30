@@ -1204,6 +1204,41 @@ a {
   }
 }
 
+//! big
+/*big*/
+.big {
+  background: $green1;
+  width: 618px;
+  height: 107px;
+  font-weight: 600;
+  font-size: 25px;
+  max-width: 100%;
+  margin-top: 80px;
+
+  span{
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    height: 70px;
+    width: 500px;
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 25px;
+    width: 289px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+
 //! banner
 /*banner*/
 .banner {
@@ -3912,8 +3947,8 @@ a {
 
 }
 
-//! solutions-performers
-/*solutions-performers*/
+//! solutions__items
+/*solutions__items*/
 
 .solutions__items{
   display: grid;
@@ -3924,9 +3959,304 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+//! solutions-performers
+/*solutions-performers*/
 .solutions-performers{
   @media screen and (max-width: 768px) {
     background: $blue_light;
     grid-gap: 50px;
+  }
+}
+
+//! how-flexible-shifts
+/*how-flexible-shifts*/
+.how-flexible-shifts{
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 45px;
+  }
+
+  &>.container{
+    @media screen and (max-width: 991px) {
+      padding: 0;
+    }
+  }
+
+  .know__items{
+    max-width: 520px;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+
+  .title{
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      color: $black;
+    }
+  }
+
+  .know__inner{
+    flex-direction: column;
+  }
+
+  .know__body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+
+  .know__content{
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      background: $white;
+      padding: 25px 30px 50px;
+    }
+  }
+
+  .know__item{
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  .know__text{
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  .know__images{
+    position: relative;
+    right: -50px;
+
+    @media screen and (max-width: 1280px) {
+      width: 450px;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin-top: 47px;
+      width: 254px;
+    }
+
+  }
+
+  .know__description{
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      font-weight: 600;
+      font-size: 24px;
+      text-align: center;
+      max-width: 320px;
+      margin: 25px auto;
+    }
+  }
+
+  .know__number{
+    @media screen and (max-width: 768px) {
+      margin: 0 0 25px 0;
+      width: 70px;
+      height: 70px;
+      font-size: 36px;
+    }
+  }
+}
+
+//! how-flexible-shifts
+/*how-flexible-shifts*/
+.looking-for-job{
+
+  @media screen and (max-width: 768px) {
+    background: $white;
+
+    .title{
+      color: $black;
+      text-align: center;
+    }
+  }
+
+  .know__inner{
+    align-items: center;
+  }
+
+  .know__content{
+    max-width: 700px;
+
+    @media screen and (max-width: 768px) {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 15px;
+      text-align: center;
+    }
+
+  }
+
+  .know__images{
+    position: relative;
+    right: -100px;
+
+    @media screen and (max-width: 1280px) {
+      right: 0;
+    }
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .know__items{
+    width: 550px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .know__item{
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .know__number{
+    @media screen and (max-width: 768px) {
+      width: 70px;
+      height: 70px;
+      font-weight: 400;
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .know__text{
+    @media screen and (max-width: 768px) {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}
+
+//! view-offers-performers
+/*view-offers-performers*/
+.view-offers-performers{
+  margin-bottom: 90px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  .view-offers__images{
+    margin-bottom: 90px;
+  }
+
+  .view-offers__info{
+    max-width: 1250px;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 115px;
+
+    span{
+      display: block;
+      text-transform: uppercase;
+      color: $green1;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      max-width: 400px;
+      margin-bottom: 250px;
+      span{
+        display: block;
+        text-transform: lowercase;
+        color: $green1;
+      }
+    }
+  }
+
+  .view-offers__images{
+    @media screen and (max-width: 768px) {
+      top: 47%;
+      width: 60px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+//? =================================================== F&Q
+
+.main-fq{
+
+  .main__text{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: $white;
+    position: relative;
+    top: -60px;
+
+    @media screen and (max-width: 1280px) {
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 45px;
+      top: 0;
+      max-width: 310px;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+  }
+
+  .main__inner{
+    padding-top: 160px;
+
+    @media screen and (max-width: 1280px) {
+      padding-top: 120px;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .main__images{
+    @media screen and (max-width: 991px) {
+      width: 209px;
+    }
+
+    @media screen and (max-width: 768px) {
+      &.first{
+        display: none;
+      }
+    }
+  }
+
+  .main__item{
+    align-self: center;
   }
 }
