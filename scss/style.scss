@@ -4397,3 +4397,320 @@ a {
   }
 }
 
+.main-registration {
+  overflow: hidden;
+  padding-top: 180px;
+  @media screen and (max-width: 1280px) {
+    padding-top: 130px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__images {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 3;
+    flex-shrink: 0;
+
+    @media screen and (max-width: 1280px) {
+      width: 400px;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 350px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 300px;
+      bottom: -80px;
+    }
+  }
+}
+
+
+
+.registration {
+  position: relative;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  background: $white;
+  position: relative;
+  left: -50px;
+  bottom: 80px;
+  text-align: center;
+
+  @media screen and (max-width: 1280px) {
+    bottom: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    left: 0;
+    bottom: -100px;
+  }
+
+  .input{
+    border: 1px solid #B7B7B7;
+    border-radius: 40px;
+    height: 50px;
+    width: 400px;
+
+    &:active {
+      
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 350px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      font-size: 12px;
+      padding: 0 15px;
+    }
+  }
+
+  &__body{
+    padding: 0 100px;
+
+    @media screen and (max-width: 1280px) {
+      padding: 0 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 25px;
+    }
+  }
+
+  &__inner {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 1280px) {
+      padding: 30px 0;
+    }
+
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 56px;
+
+    @media screen and (max-width: 1280px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+
+  &__subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 53px;
+
+    @media screen and (max-width: 768px) {
+      width: 280px;
+      margin: 0 auto 25px;
+    }
+  }
+
+  &__button-close{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+
+  &__email {
+    margin-bottom: 22px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__password {
+    position: relative;
+  }
+
+  &__password-input {
+    margin-bottom: 12px;
+  }
+
+  &__password-img {
+
+    span{
+      display: flex;
+      align-items: flex-start;
+      position: absolute;
+      top: 17px;
+      right: 34px;
+    }
+
+    @media screen and (max-width: 768px) {
+      span{
+        right: 16px;
+      }
+    }
+  
+  }
+
+  &__password-description {
+    text-align: right;
+    color:$grey;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+
+  &__password-error{
+    font-weight: 400;
+    font-size: 12px;
+    color: $red;
+    text-align-last: left;
+    margin-bottom: 14px;
+    @media screen and (max-width: 768px) {
+      font-size: 11px;
+    }
+  }
+
+  &__button {
+    background: $green1;
+    width: 289px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 115px;
+    margin: 0 auto 50px;
+
+    @media screen and (max-width: 768px) {
+      font-weight: 500;
+      font-size: 13px;
+      margin: 0 auto 15px;
+    }
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+
+    a{
+      color: $green1;
+      border-bottom: 1px solid $green1;
+
+      &:hover{
+        color: $blue;
+        border-bottom: 1px solid $blue;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.registration-employer1 {
+  .see{
+    display: none;
+  }
+
+  .not-see{
+    display: flex;
+  }
+}
+
+.registration-employer2 {
+  .see{
+    display: flex;
+  }
+
+  .not-see{
+    display: none;
+  }
+
+  .input{
+    border: 1px solid $green1;
+  }
+}
+
+.registration-employer3 {
+  .see{
+    display: flex;
+  }
+
+  .not-see{
+    display: none;
+  }
+
+  .registration__password-input{
+    border: 1px solid $red;
+  }
+}
+
+
+.registration-employer4 {
+  .registration__email{
+    margin-bottom: 90px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 13px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .registration__title{
+      margin-bottom: 23px;
+    }
+  }
+}
+
+.registration-employer5 {
+  .see{
+    display: none;
+  }
+
+  .not-see{
+    display: flex;
+  }
+
+  .registration__password-new{
+    margin-bottom: 22px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 13px;
+    }
+  }
+
+  .registration__password-confirm{
+    margin-bottom: 48px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 13px;
+    }
+  }
+}
+
+
