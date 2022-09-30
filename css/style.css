@@ -4586,3 +4586,154 @@ a:hover {
 .main-fq .main__item {
   align-self: center;
 }
+
+/*questions*/
+.questions {
+  padding: 136px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .questions {
+    padding: 40px 0;
+  }
+}
+
+.questions__title {
+  text-align: center;
+  margin-bottom: 100px;
+  color: #4466bc;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .questions__title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.questions__body {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 35px 30px;
+  margin-bottom: 30px;
+}
+
+.questions__body:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .questions__body {
+    padding: 20px;
+    margin-bottom: 23px;
+  }
+}
+
+.questions__header {
+  font-weight: 400;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.questions__header .questions__arrow .arrow-blue {
+  opacity: 0;
+}
+
+.questions__header.active {
+  color: #4466bc;
+}
+
+.questions__header.active .questions__arrow .arrow {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.questions__header.active .questions__arrow .arrow-blue {
+  opacity: 1;
+}
+
+.questions__description {
+  font-weight: 600;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .questions__description {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.questions__arrow {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 34px;
+  transition: 300ms;
+}
+
+.questions__arrow img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .questions__arrow {
+    width: 15px;
+  }
+}
+
+.questions__text {
+  border-top: 2px solid #4466bc;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.questions__text p {
+  margin-bottom: 35px;
+}
+
+.questions__text p:last-child {
+  margin-bottom: 0;
+}
+
+.questions__text span {
+  color: #4466bc;
+}
+
+@media screen and (max-width: 768px) {
+  .questions__text {
+    margin-top: 20px;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.questions .second {
+  margin-top: 136px;
+}
+
+@media screen and (max-width: 768px) {
+  .questions .second {
+    margin-top: 40px;
+  }
+}
+
+.questions .red {
+  color: #bf5b5b;
+}
+
+.questions .orange {
+  color: #e58641;
+}
+
+.questions .green {
+  color: #55d1ad;
+}
