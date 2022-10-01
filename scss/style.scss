@@ -1238,7 +1238,6 @@ a {
   }
 }
 
-
 //! banner
 /*banner*/
 .banner {
@@ -4201,6 +4200,8 @@ a {
 
 //? =================================================== F&Q
 
+//! main-fq
+/*main-fq*/
 .main-fq{
 
   .main__text{
@@ -4397,53 +4398,10 @@ a {
   }
 }
 
-.main-registration {
-  overflow: hidden;
-  padding-top: 180px;
-  @media screen and (max-width: 1280px) {
-    padding-top: 130px;
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 0;
-  }
-
-  &__inner {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-
-    @media screen and (max-width: 768px) {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-  }
-
-  &__images {
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    z-index: 3;
-    flex-shrink: 0;
-
-    @media screen and (max-width: 1280px) {
-      width: 400px;
-    }
-
-    @media screen and (max-width: 991px) {
-      width: 350px;
-    }
-
-    @media screen and (max-width: 768px) {
-      width: 300px;
-      bottom: -80px;
-    }
-  }
-}
-
-
-
+//! registration
+/*registration*/
 .registration {
+  font-family: 'Open Sans';
   position: relative;
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
@@ -4452,6 +4410,7 @@ a {
   left: -50px;
   bottom: 80px;
   text-align: center;
+  width: 600px;
 
   @media screen and (max-width: 1280px) {
     bottom: 40px;
@@ -4459,6 +4418,7 @@ a {
 
   @media screen and (max-width: 768px) {
     left: 0;
+    width: 100%;
     bottom: -100px;
   }
 
@@ -4466,18 +4426,9 @@ a {
     border: 1px solid #B7B7B7;
     border-radius: 40px;
     height: 50px;
-    width: 400px;
-
-    &:active {
-      
-    }
-
-    @media screen and (max-width: 991px) {
-      width: 350px;
-    }
+    width: 100%;
 
     @media screen and (max-width: 768px) {
-      width: 100%;
       font-size: 12px;
       padding: 0 15px;
     }
@@ -4537,12 +4488,13 @@ a {
     position: absolute;
     right: 16px;
     top: 16px;
+    cursor: pointer;
   }
 
   &__email {
     margin-bottom: 22px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 991px) {
       margin-bottom: 13px;
     }
   }
@@ -4589,7 +4541,7 @@ a {
     font-weight: 400;
     font-size: 12px;
     color: $red;
-    text-align-last: left;
+    text-align: left;
     margin-bottom: 14px;
     @media screen and (max-width: 768px) {
       font-size: 11px;
@@ -4598,7 +4550,7 @@ a {
 
   &__button {
     background: $green1;
-    width: 289px;
+    max-width: 289px;
     height: 50px;
     font-weight: 600;
     font-size: 14px;
@@ -4609,6 +4561,7 @@ a {
       font-weight: 500;
       font-size: 13px;
       margin: 0 auto 15px;
+      max-width: 100%;
     }
   }
 
@@ -4634,83 +4587,424 @@ a {
   }
 }
 
-.registration-employer1 {
-  .see{
-    display: none;
-  }
-
-  .not-see{
-    display: flex;
-  }
-}
-
-.registration-employer2 {
-  .see{
-    display: flex;
-  }
-
-  .not-see{
-    display: none;
-  }
-
-  .input{
-    border: 1px solid $green1;
-  }
-}
-
-.registration-employer3 {
-  .see{
-    display: flex;
-  }
-
-  .not-see{
-    display: none;
-  }
-
-  .registration__password-input{
-    border: 1px solid $red;
-  }
-}
-
-
-.registration-employer4 {
-  .registration__email{
-    margin-bottom: 90px;
-
-    @media screen and (max-width: 768px) {
-      margin-bottom: 13px;
-    }
+//! main-registration
+/*main-registration*/
+.main-registration {
+  overflow: hidden;
+  padding-top: 180px;
+  @media screen and (max-width: 1280px) {
+    padding-top: 130px;
   }
 
   @media screen and (max-width: 768px) {
-    .registration__title{
-      margin-bottom: 23px;
-    }
-  }
-}
-
-.registration-employer5 {
-  .see{
-    display: none;
+    padding: 0;
   }
 
-  .not-see{
+  &__inner {
     display: flex;
-  }
+    justify-content: center;
+    align-items: end;
 
-  .registration__password-new{
-    margin-bottom: 22px;
     @media screen and (max-width: 768px) {
-      margin-bottom: 13px;
+      flex-direction: column-reverse;
+      align-items: center;
     }
   }
 
-  .registration__password-confirm{
-    margin-bottom: 48px;
+  &__images {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 3;
+    flex-shrink: 0;
+
+    @media screen and (max-width: 1280px) {
+      width: 400px;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 350px;
+    }
+
     @media screen and (max-width: 768px) {
-      margin-bottom: 13px;
+      width: 300px;
+      bottom: -80px;
+    }
+  }
+
+  &.registration-employer1 {
+    .see{
+      display: none;
+    }
+  
+    .not-see{
+      display: flex;
+    }
+  }
+  
+  &.registration-employer2 {
+    .see{
+      display: flex;
+    }
+  
+    .not-see{
+      display: none;
+    }
+  
+    .input{
+      border: 1px solid $green1;
+    }
+  }
+  
+  &.registration-employer3 {
+    .see{
+      display: flex;
+    }
+  
+    .not-see{
+      display: none;
+    }
+  
+    .registration__password-input{
+      border: 1px solid $red;
+    }
+  }
+  
+  &.registration-employer4 {
+    .registration__email{
+      margin-bottom: 90px;
+  
+      @media screen and (max-width: 768px) {
+        margin-bottom: 13px;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      .registration__title{
+        margin-bottom: 23px;
+      }
+    }
+  }
+  
+  &.registration-employer5 {
+    .see{
+      display: none;
+    }
+  
+    .not-see{
+      display: flex;
+    }
+  
+    .registration__password-new{
+      margin-bottom: 22px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 13px;
+      }
+    }
+  
+    .registration__password-confirm{
+      margin-bottom: 48px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 13px;
+      }
     }
   }
 }
+
+.main-register {
+  .registration {
+
+		&__inner {
+      padding: 20px 0 40px;
+      @media screen and (max-width: 1280px) {
+        padding: 30px 0;
+      }
+		}
+
+		&__title {
+      width: 300px;
+      margin: 0 auto 35px;
+
+      @media screen and (max-width: 1280px) {
+        margin: 0 auto 20px;
+        width: 100%;
+      }
+		}
+
+    &__text{
+      max-width: 450px;
+      font-size: 14px;
+      font-weight: 600;
+      span{
+        color: #11A0F0;
+      }
+      p{
+        margin-bottom: 50px;
+        @media screen and (max-width: 1280px) {
+          padding: 0 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin-bottom: 35px;
+          text-align: left;
+        }
+      }
+      margin: 0 auto;
+    }
+
+		&__choice {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      margin: 0 auto;
+      margin-bottom: 35px;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+      color: $grey;
+      border-bottom: 1px solid $grey;
+      cursor: pointer;
+      transition: 300ms;
+      p{
+        width: 50%;
+        position: relative;
+        padding-bottom: 8px;
+
+          &:before{
+          content: '' ; 
+          display: inline-block;
+          width: 100%;
+          height: 2px;
+          background: transparent;
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+          transition: 300ms;
+        }
+
+        &:hover{
+          color: $black;
+          &:before{
+            background: $green1;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1280px) {
+        margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-weight: 600;
+        font-size: 12px;
+        width: 100%;
+      }
+		}
+
+    .mb-20{
+      @media screen and (max-width: 1280px) {
+        margin-bottom: 10px;
+      }
+    }
+
+
+		&__contact {
+      margin: 30px 0;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 1280px) {
+        margin: 15px 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin: 25px 0 20px;
+        font-size: 12px;
+      }
+		}
+
+		&__button {
+      margin: 55px auto 30px;
+
+      @media screen and (max-width: 1280px) {
+        margin: 30px auto 15px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin: 13px auto;
+      }
+
+		}
+
+		&__personal-data {
+      color: rgba(102, 102, 102, 0.5);
+      font-size: 12px;
+      margin-bottom: 30px;
+      a{
+        color: $grey;
+        border-bottom: 1px solid $grey;
+
+        &:hover{
+          color: $green;
+        border-bottom: 1px solid $green;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+		}
+
+		&__next-step {
+      display: flex;
+      width: 120px;
+      justify-content: space-between;
+      margin: 0 auto;
+      li{
+        width: 18px;
+        height: 3px;
+        background: $grey;
+        &:first-child{
+          background: $green1;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 70px;
+        li{
+          width: 13px;
+        }
+
+      }
+		}
+  }
+
+  &.registration-employer7 {
+    .see{
+      display: flex;
+    }
+  
+    .not-see{
+      display: none;
+    }
+
+    .mb-20{
+      margin-bottom: 20px;
+      @media screen and (max-width: 991px) {
+        margin-bottom: 13px;
+      }
+    }
+
+    .registration__button{
+      margin: 20px auto ;
+      background: $grey;
+    }
+  
+  }
+
+  &.registration-employer8 {
+    .see{
+      display: flex;
+    }
+  
+    .not-see{
+      display: none;
+    }
+
+    .mb-20{
+      margin-bottom: 20px;
+      @media screen and (max-width: 991px) {
+        margin-bottom: 13px;
+      }
+    }
+
+    .registration__password-error{
+      max-width: 340px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .registration__button{
+      margin: 12px auto 54px;
+      background: $grey;
+    }
+
+    .registration__email{
+      &.input{
+        border: 1px solid $green1;
+      }
+    }
+
+    .registration__password{
+      .input{
+        border: 1px solid $red;
+      }
+    }
+  
+    .registration__next-step{
+      li{
+        &:nth-child(2){
+          background: $green1;
+        }
+
+        &:nth-child(3){
+          background: $green1;
+        }
+      }
+    }
+  }
+
+  &.registration-employer9 {
+    .see{
+      display: flex;
+    }
+  
+    .not-see{
+      display: none;
+    }
+
+    .mb-20{
+      margin-bottom: 20px;
+      @media screen and (max-width: 991px) {
+        margin-bottom: 13px;
+      }
+    }
+
+    .registration__password-error{
+      max-width: 340px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .registration__button{
+      margin: 12px auto 54px;
+      background: $grey;
+    }
+
+    .registration__next-step{
+      li{
+        &:nth-child(2){
+          background: $green1;
+        }
+
+        &:nth-child(3){
+          background: $green1;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
 
